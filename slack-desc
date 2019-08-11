@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description. Line
+# up the first '|' above the ':' following the base package name, and the '|' on
+# the right side marks the last column you can put a character in. You must make
+# exactly 11 lines for the formatting to be correct. It's also customary to
+# leave one space after the ':'.
+
+      |-----handy-ruler------------------------------------------------------|
+mg-openbsd: mg-troglobit (Portable self hosting version of the mg editor)
+mg-openbsd:
+mg-openbsd: the intention is to be a small, fast, and portable Emacs-like
+mg-openbsd: editor for users who cannot, or do not want to, run the real
+mg-openbsd: Emacs for one reason or another.
+mg-openbsd: 
+mg-openbsd: Compatibility with GNU Emacs is key for Mg, separating it from
+mg-openbsd: other ErsatzEmacs clones, because there should never be any
+mg-openbsd: reason to learn more than one Emacs flavor.
+mg-openbsd: 
+mg-openbsd: homepage: https://github.com/scott-parker/mg-openbsdmg-openbsd: 
