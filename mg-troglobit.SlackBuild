@@ -4,7 +4,7 @@
 # saidone@saidone.org revision date 2019/08/11
 # license: see LICENSE
 
-APP=mg
+APP=mg-troglobit
 VERSION=${VERSION:-3.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -42,7 +42,8 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $APP-$VERSION
-tar xvf $CWD/$APP-$VERSION.tar.gz
+tar xvf $CWD/${APP/troglobit/}$VERSION.tar.gz
+mv ${APP/troglobit/}$VERSION $APP-$VERSION
 cd $APP-$VERSION
 chown -R root:root .
 chmod -R u+w,go+r-w,a-s .
@@ -67,7 +68,7 @@ make
 make install PREFIX=/usr DESTDIR=$PKG
 
 mkdir -p $PKG/usr/doc/$APP-$VERSION
-cat $CWD/$APP-troglobit.SlackBuild > $PKG/usr/doc/$APP-$VERSION/$APP-troglobit.SlackBuild
+cat $CWD/$APP.SlackBuild > $PKG/usr/doc/$APP-$VERSION/$APP.SlackBuild
 find $PKG/usr/doc/$APP-$VERSION -type f -exec chmod 644 {} \;
 
 mkdir -p $PKG/install
