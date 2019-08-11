@@ -1,0 +1,1 @@
+# mg-troglobit.SlackBuild
