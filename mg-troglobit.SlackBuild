@@ -50,6 +50,8 @@ chmod -R u+w,go+r-w,a-s .
 # override SLKCFLAGS if CFLAGS is set
 if [ -n "$(echo $CFLAGS|tr -d '[:space:]')" ]; then SLKCFLAGS="$CFLAGS"; fi
 
+SLKCFLAGS="$SLKCFLAGS -lcurses"
+
 CFLAGS="$SLKCFLAGS" \
   ./configure \
     --prefix=/usr \
@@ -65,7 +67,7 @@ make
 make install PREFIX=/usr DESTDIR=$PKG
 
 mkdir -p $PKG/usr/doc/$APP-$VERSION
-cat $CWD/$APP.SlackBuild > $PKG/usr/doc/$APP-$VERSION/$APP.SlackBuild
+cat $CWD/$APP-troglobit.SlackBuild > $PKG/usr/doc/$APP-$VERSION/$APP-troglobit.SlackBuild
 cp -a $TMP/$APP-$VERSION/{LICENSE,NOTICE,README,VERSION} $PKG/usr/doc/$APP-$VERSION
 cp -aR $TMP/$APP-$VERSION/doc/{tech-notes,brochure.txt,mailcap.unx,mime.types} $PKG/usr/doc/$APP-$VERSION
 find $PKG/usr/doc/$APP-$VERSION -type f -exec chmod 644 {} \;
