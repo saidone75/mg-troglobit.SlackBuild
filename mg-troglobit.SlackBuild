@@ -68,11 +68,7 @@ make install PREFIX=/usr DESTDIR=$PKG
 
 mkdir -p $PKG/usr/doc/$APP-$VERSION
 cat $CWD/$APP-troglobit.SlackBuild > $PKG/usr/doc/$APP-$VERSION/$APP-troglobit.SlackBuild
-cp -a $TMP/$APP-$VERSION/{LICENSE,NOTICE,README,VERSION} $PKG/usr/doc/$APP-$VERSION
-cp -aR $TMP/$APP-$VERSION/doc/{tech-notes,brochure.txt,mailcap.unx,mime.types} $PKG/usr/doc/$APP-$VERSION
 find $PKG/usr/doc/$APP-$VERSION -type f -exec chmod 644 {} \;
-cp -aR $CWD/etc $PKG
-find $PKG/etc -type f -exec chmod 644 {} \;
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
@@ -95,6 +91,8 @@ if [ -d $PKG/usr/info ]; then
   gzip -9 $PKG/usr/info/*.info
   rm -f $PKG/usr/info/dir
 fi
+
+rm $PKG/usr/doc/$APP-$VERSION/*.md
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$APP-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
