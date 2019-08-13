@@ -2,7 +2,7 @@
 
 # Slackware build script for Joachim Nilsson (troglobit)'s fork of OpenBSD Mg
 # saidone@saidone.org revision date 2019/08/11
-# license (of this script and its accessories, not that of the application it will build): see LICENSE
+# license (of this script and its accessories, not that of the application it will package): see LICENSE
 
 APP=mg-troglobit
 VERSION=${VERSION:-3.2}
