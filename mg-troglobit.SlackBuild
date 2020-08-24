@@ -1,11 +1,11 @@
 #!/bin/sh -e
 
 # Slackware build script for Joachim Nilsson (troglobit)'s fork of OpenBSD Mg
-# saidone@saidone.org revision date 2019/12/12
+# saidone@saidone.org revision date 2020/08/24
 # license (of this script and its accessories, not that of the application it will package): see LICENSE
 
 PRGNAM=mg-troglobit
-VERSION=${VERSION:-3.3}
+VERSION=${VERSION:-3.4}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -78,6 +78,8 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+
+gzip -9 $PKG/usr/doc/$PRGNAM-$VERSION/tutorial
 
 rm $PKG/usr/doc/$PRGNAM-$VERSION/*.md
 
