@@ -1,6 +1,6 @@
 # mg-troglobit.SlackBuild
 
-A SlackBuild for Joachim Nilsson (troglobit)'s fork of OpenBSD Mg (https://github.com/troglobit/mg)
+A SlackBuild for Joachim Wiberg (troglobit)'s fork of OpenBSD Mg (https://github.com/troglobit/mg)
 
 The usage is the very same of https://slackbuilds.org/howto/
 

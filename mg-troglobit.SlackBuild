@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-# Slackware build script for Joachim Nilsson (troglobit)'s fork of OpenBSD Mg
+# Slackware build script for Joachim Wiberg (troglobit)'s fork of OpenBSD Mg
 # saidone@saidone.org revision date 2020/08/24
 # license (of this script and its accessories, not that of the application it will package): see LICENSE
 
