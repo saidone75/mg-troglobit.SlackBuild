@@ -1,5 +1,5 @@
 PRGNAM="mg-troglobit"
-VERSION="3.4"
+VERSION="3.5"
 HOMEPAGE="https://github.com/troglobit/mg"
 DOWNLOAD="https://github.com/troglobit/mg/releases/download/v3.5/mg-3.5.tar.gz"
 MD5SUM="a4221d03ca55b9697bddb7243d35a3fe"
