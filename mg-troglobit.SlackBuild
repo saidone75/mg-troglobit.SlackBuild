@@ -1,11 +1,11 @@
 #!/bin/sh -e
 
 # Slackware build script for Joachim Wiberg (troglobit)'s fork of OpenBSD Mg
-# saidone@saidone.org revision date 2020/08/24
+# saidone@saidone.org revision date 2021/10/18
 # license (of this script and its accessories, not that of the application it will package): see LICENSE
 
 PRGNAM=mg-troglobit
-VERSION=${VERSION:-3.4}
+VERSION=${VERSION:-3.5}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
