@@ -1,5 +1,5 @@
 PRGNAM="mg-troglobit"
-VERSION="3.5"
+VERSION="3.6"
 HOMEPAGE="https://github.com/troglobit/mg"
 DOWNLOAD="https://github.com/troglobit/mg/releases/download/v3.6/mg-3.6.tar.gz"
 MD5SUM="a6eab531431abd3c9e1dbb18749e30b9"
@@ -8,4 +8,3 @@ MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Marco Marini"
 EMAIL="saidone@saidone.org"
-
